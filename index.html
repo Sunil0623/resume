@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        #project-autism h3,
+        #project-HMS h3,
+        #project-PPAIS h3 {
+            color: aqua;
+            text-align: center;
+        }
+
+        #project-autism,
+        #project-HMS,
+        #project-PPAIS {
+            margin-left: 12.5%;
+        }
+
+        #project-autism h4,
+        #project-HMS h4,
+        #project-PPAIS h4 {
+            font-size: 20px;
+        }
+
+        #project-autism li,
+        #project-HMS li,
+        #project-PPAIS li {
+            font-size: 18px;
+        }
+
+        #project-autism p,
+        #project-HMS p,
+        #project-PPAIS {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <a href="#home" class="logo">Sunil
+            <span>Gowda S</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <!--navbar-->
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!---Home--->
+    <section class="Home" id="Home">
+        <div class="home-img">
+            <img src="image/Raghav.jpeg" alr="Sunil's pic">
+        </div>
+
+        <div class="home-content">
+            <h1>It's <span>Sunil,</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+
+            </h3>
+            <br>
+            <p>
+                "As an enthusiastic learner, I am dedicated to acquiring and utilizing knowledge from my academic
+                background to create innovative solutions that meet real-world needs. I am committed to staying updated
+                with the latest technologies and trends in my field, and I am eager to collaborate with others to bring
+                my ideas to life."</p>
+            <br>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/yourprofile" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank"><i
+                        class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--About Me-->
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p>"I am a dedicated learner with a passion for technology and a strong interest in becoming a skilled
+                developer. I am committed to continuous learning and honing my skills in programming to excel in the
+                dynamic IT industry. I am excited about the prospect of contributing to innovative projects and driving
+                impactful solutions as a developer."</p>
+
+            <a href="#more-info" class="btn" id="read-more-btn">Read more</a>
+
+        </div>
+        <div class="about-img">
+            <img src="image/Raghav.jpeg" alt="Sunil picture">
+        </div>
+
+    </section>
+
+    <!-- Personel info -->
+
+    <div id="more-info"
+        style="display: none; position: fixed; bottom: 10%; right: 10%; background-color: #333; color: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); z-index: 999;">
+        <h3 style="font-size: 24px;">Personal Information:</h3>
+        <p style="font-size: 18px;"><strong>Name:</strong> Sunil Gowda S</p>
+        <p style="font-size: 18px;"><strong>Date of Birth:</strong> 23/11/2001</p>
+        <p style="font-size: 18px;"><strong>Phone Number:</strong> +91 9206241246</p>
+        <p style="font-size: 18px;"><strong>Email:</strong> raghav0623.tech@gmail.com</p>
+        <p style="font-size: 18px;"><strong>Alt-Email:</strong> sunilgowda23112000@gmail.com</p>
+        <p style="font-size: 18px;"><strong>Address:</strong> No.30 1st Cross 4th main Viratnagar, Bommanahalli,
+            Bengaluru-068</p>
+
+        <h3 style="font-size: 24px;">Education:</h3>
+        <p style="font-size: 18px;"><strong>Degree:</strong> MCA</p>
+        <p style="font-size: 18px;"><strong>Institution:</strong> Global Institute of Management Sciences</p>
+        <p style="font-size: 18px;"><strong>Field of Study:</strong> Computer Applications</p>
+        <p style="font-size: 18px;"><strong>Graduation Year:</strong> 2023</p>
+
+        <br>
+
+        <!-- Back button to hide the section -->
+        <a href="#" class="btn" id="Back" style="display: block; margin-top: 20px; text-align: center;">Back</a>
+    </div>
+
+
+    <!----------Projects part----------->
+    <section class="Projects" id="Projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="project-container">
+
+            <a href="#project-autism">
+                <div class="project-box" id="Autism">
+                    <div class="project-info">
+                        <h4>Prediction of Autism Spectrum disorder</h4>
+                        <p>Machine learning predicts autism spectrum disorder in children, enhancing early detection
+                            and enabling timely interventions..</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#project-HMS">
+                <div class="project-box" id="HMS">
+                    <div class="project-info">
+                        <h4>Hospital Management System</h4>
+                        <p>An advanced platform designed to store comprehensive patient information and efficiently
+                            manage appointments, streamlining healthcare processes for enhanced patient care and
+                            organizational efficiency.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#project-PPAIS">
+                <div class="project-box" id="PPAIS">
+                    <div class="project-info">
+                        <h4>Precession Performance Analysis And Intervention System</h4>
+                        <p>Emphasizing continuous learning,
+                            our platform fosters growth by providing valuable insights from exam results, facilitating
+                            ongoing skill development and knowledge acquisition.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-------Projects Details---------->
+
+    <div id="project-autism"
+        style="display: none; position:fixed; bottom: 10%; right: 10%; background-color: #333; color: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); z-index: 999;">
+        <h3 style="font-size: 24px;">Prediction of Autism using ML</h3>
+        <h4 style="color: aqua;">Project Goals:</h4>
+        <p>Enhance early detection of autism spectrum disorder in children under 3 years old using machine learning
+            algorithms. The project aims to facilitate early intervention and treatment for positive cases.</p>
+
+        <h4 style="color: aqua;">Software Requirements:</h4>
+        <ul>
+            <li>Operating System: Windows/Mac</li>
+            <li>Frontend: Bootstrap</li>
+            <li>IDE: Spyder</li>
+            <li>Libraries: pandas, numpy, pickle, matplotlib, etc.</li>
+        </ul>
+
+        <h4 style="color: aqua;">Hardware Requirements:</h4>
+        <ul>
+            <li>Hard Disk: 500 GB or more</li>
+            <li>RAM: 4GB</li>
+        </ul>
+
+        <h4 style="color: aqua;">Modules Details:</h4>
+        <ul>
+            <li>Parents/Guardian:
+                <p>Parents or guardians can log in to the site and provide answers to behavioral questions on behalf of
+                    children requiring tests. Predictions are generated based on the responses provided.</p>
+            </li>
+            <li>Doctor:
+                <p>Medical professionals conduct assessments based on the child's behavior and observations made during
+                    the treatment process.</p>
+            </li>
+        </ul>
+
+        <h4 style="color: aquamarine;">Conclusion</h4>
+        <p>A prediction model has been developed to accurately predict autism traits in children using the AQ-10
+            dataset. This model outperforms existing screening methods and a user-friendly application has been created
+            for easy prediction of autism traits. This research offers an effective approach to detect autism traits
+            early in children, potentially reducing delays in diagnosis and associated costs.</p>
+
+        <!-- Back button to hide the section -->
+        <a href="#Autism" class="btn" id="Back" style="display: block; margin-top: 20px; text-align: center;">OK</a>
+    </div>
+
+    <div id="project-HMS"
+        style="display: none; position: fixed; bottom: 10%; right: 10%; background-color: #333; color: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); z-index: 999;">
+        <h3 style="font-size: 24px;">Hospital Management System</h3>
+        <h4 style="color: aqua;">Project Goals:</h4>
+        <p>Streamline healthcare processes for efficient patient care management and appointment scheduling.</p>
+
+        <h4 style="color: aqua;">Software Requirements:</h4>
+        <ul>
+            <li>Operating System: Windows/Mac</li>
+            <li>Frontend: Visual Basic 6.0</li>
+            <li>Backend: MS SQL SERVER</li>
+        </ul>
+
+        <h4 style="color: aqua;">Hardware Requirements:</h4>
+        <ul>
+            <li>Hard Disk: 500 GB or more</li>
+            <li>RAM: 4GB</li>
+        </ul>
+
+        <h4 style="color: aqua;">Modules Details:</h4>
+        <ul>
+            <li>Receptionist/Admin:
+                <p>The individual or a team of people were entrusted with the responsibility of managing appointments,
+                    ensuring bed
+                    availability for incoming patients, making necessary arrangements, handling billing procedures, and
+                    preparing comprehensive discharge summaries. Their role encompassed a wide range of tasks aimed at
+                    ensuring smooth operations and providing efficient care to patients throughout their healthcare
+                    journey.</p>
+            </li>
+        </ul>
+
+        <h4 style="color: aquamarine;">Conclusion</h4>
+        <p>The hospital management system is essential for modern medical institutions, automating daily operations and
+            improving user interactions. Developing this software creates an efficient healthcare model. It stores
+            records, coordinates communication, implements policies, and manages hospital services effectively. This
+            system simplifies interactions for patients, staff, and authorities, becoming a standard in hospital
+            management.</p>
+
+        <!-- Back button to hide the section -->
+        <a href="#HMS" class="btn" id="Back" style="display: block; margin-top: 20px; text-align: center;">OK</a>
+    </div>
+
+    <div id="project-PPAIS"
+        style="display: none; position: fixed; bottom: 10%; right: 10%; background-color: #333; color: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); z-index: 999;">
+        <h3 style="font-size: 24px;">Precession Performance Analysis And Intervention System</h3>
+        <h4 style="color: aqua;">Software Requirements:</h4>
+        <ul>
+            <li>Operating System: Windows/Mac</li>
+            <li>Frontend: html,css,Tailwind css,Bootstrap</li>
+            <li>IDE: Netbeans 8.2</li>
+            <li>Libraries: Bcrypt,Servlet api,JDBC Drivers,JSP API</li>
+        </ul>
+
+        <h4 style="color: aqua;">Hardware Requirements:</h4>
+        <ul>
+            <li>Hard Disk: 500 GB or more</li>
+            <li>RAM: 8GB</li>
+        </ul>
+
+        <h4 style="color: aqua;">Modules Details:</h4>
+        <ul>
+            <li>Admin:
+                <p>To enhance control over the portal, users can manage permissions, class schedules, and exams based on
+                    eligibility criteria, empowering them to facilitate seamless access to classes and assessments. </p>
+            </li>
+            <li>Students:s
+                <p>Users can register for classes, participate in exams related to their selected courses, and receive results at the end. These results provide valuable insights into areas needing improvement, aiding in their upskilling journey. </p>
+            </li>
+        </ul>
+
+        <h4 style="color: aquamarine;">Conclusion</h4>
+        <p>The web-based exam portal aimed to provide a user-friendly experience for students, ensure accurate
+            assessment data management by administrators, emphasize rigorous testing for issue resolution, incorporate
+            user feedback for usability enhancement, and prioritize robust data security measures.</p>
+
+        <a href="#PPAIS" class="btn" id="Back" style="display: block; margin-top: 20px; text-align: center;">OK</a>
+    </div>
+
+    <!------------------contact part-------------------->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span> Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field ">
+                    <input type="text" placeholder="Full Name" id="name" class="item " autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field ">
+                    <input type="text" placeholder="Email Address" id="email" class="item " autocomplete="off">
+                    <div class="error-txt email">Email address can't be blank</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field ">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item " autocomplete="off">
+                    <div class="error-txt">Phone Number Can't be blank</div>
+                </div>
+                <div class="input-field field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item " autocomplete="off">
+                    <div class="error-txt">Email address can't be blank</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item "
+                    autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!--Footerpart-->>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/yourprofile" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; SunilGowda || All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    <!--Js for personel info-->
+    <script>
+        // JavaScript function to toggle visibility of the hidden section
+        document.getElementById("read-more-btn").addEventListener("click", function () {
+            var moreInfo = document.getElementById("more-info");
+            moreInfo.style.display = "block"; // Display the hidden section
+        });
+        // JavaScript function to hide the hidden section when "Back" button is clicked
+        document.getElementById("Back").addEventListener("click", function () {
+            var moreInfo = document.getElementById("more-info");
+            moreInfo.style.display = "none"; // Hide the hidden section
+        });
+    </script>
+    <!--Js for project details-->
+
+    <script>
+        // Get the modal elements
+        var projectAutismModal = document.getElementById("project-autism");
+        var projectHMSModal = document.getElementById("project-HMS");
+        var projectPPAISModal = document.getElementById("project-PPAIS");
+
+        // Function to display the modals
+        function displayModal(modal) {
+            modal.style.display = "block";
+        }
+
+        // Event listeners to display modals when clicked
+        document.getElementById("Autism").addEventListener("click", function () {
+            displayModal(projectAutismModal);
+        });
+
+        document.getElementById("HMS").addEventListener("click", function () {
+            displayModal(projectHMSModal);
+        });
+
+        document.getElementById("PPAIS").addEventListener("click", function () {
+            displayModal(projectPPAISModal);
+        });
+
+        // Function to hide the modals when back button is clicked
+        var backButtons = document.getElementsByClassName("btn");
+        for (var i = 0; i < backButtons.length; i++) {
+            backButtons[i].addEventListener("click", function () {
+                projectAutismModal.style.display = "none";
+                projectHMSModal.style.display = "none";
+                projectPPAISModal.style.display = "none";
+            });
+        }
+    </script>
+</body>
+
+</html>
