@@ -38,6 +38,22 @@
         #project-PPAIS {
             font-size: 18px;
         }
+         #project-autism ,
+        #project-HMS,
+        #project-PPAIS{
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    max-height: 80vh; /* Set a maximum height for the modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
     </style>
 </head>
 
@@ -133,7 +149,7 @@
         <br>
 
         <!-- Back button to hide the section -->
-        <a href="#" class="btn" id="Back" style="display: block; margin-top: 20px; text-align: center;">Back</a>
+        <a href="#" class="btn" id="Back" style="display: block; margin-top: 20px; text-align: center;">Ok</a>
     </div>
 
 
@@ -416,6 +432,23 @@
             });
         }
     </script>
+    <script>
+        // Function to display the modals
+function displayModal(modal) {
+    if (window.innerWidth < 768) { // Check if screen width is less than 768px (typical mobile width)
+        modal.style.position = "fixed";
+        modal.style.top = "10%";
+        modal.style.left = "10%";
+        modal.style.right = "10%";
+        modal.style.bottom = "10%";
+        modal.style.transform = "none";
+        modal.style.maxHeight = "80vh";
+        modal.style.overflowY = "auto";
+    }
+    modal.style.display = "block";
+}
+    </script>
+
 </body>
 
 </html>
